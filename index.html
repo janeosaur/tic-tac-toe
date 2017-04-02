@@ -2,13 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-
     <!-- set viewport to device width to allow responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-    <!-- Compiled and minified Materialize CSS -->
+    <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
 
     <!-- Compiled and minified Materialize JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
@@ -17,9 +18,10 @@
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
 
     <!-- TODO: add jQuery from CDN -->
-
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
     <!-- link to custom javascript file (always require after external JS libraries) -->
+    <script src ="js/app.js"> </script>
 
     <title>Tic Tac Toe</title>
   </head>
@@ -31,6 +33,7 @@
           <hr>
         </div>
       </div>
+      <div class = "board">
       <div class="row">
 
         <!-- a column represents our game board -->
@@ -41,20 +44,45 @@
           <!-- Materialize subdivides these 'nested' rows into 12 columns, too! -->
           <div class="row">
             <div class="col m4 valign-wrapper box">
-              <h3 class="valign center-block">X</h3>
+              <h3 class="valign center-block" id = "a1"> &nbsp </h3>
             </div>
             <div class="col m4 valign-wrapper box">
-              <h3 class="valign center-block">X</h3>
+              <h3 class="valign center-block" id = "a2"> &nbsp </h3>
             </div>
             <div class="col m4 valign-wrapper box">
-              <h3 class="valign center-block">X</h3>
+              <h3 class="valign center-block" id = "a3"> &nbsp </h3>
             </div>
           </div>
-
-
+          <div class="row">
+            <div class="col m4 valign-wrapper box">
+              <h3 class="valign center-block" id = "b1"> &nbsp </h3>
+            </div>
+            <div class="col m4 valign-wrapper box">
+              <h3 class="valign center-block" id = "b2"> &nbsp </h3>
+            </div>
+            <div class="col m4 valign-wrapper box">
+              <h3 class="valign center-block" id = "b3"> &nbsp </h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col m4 valign-wrapper box">
+              <h3 class="valign center-block" id = "c1"> &nbsp </h3>
+            </div>
+            <div class="col m4 valign-wrapper box">
+              <h3 class="valign center-block" id = "c2"> &nbsp </h3>
+            </div>
+            <div class="col m4 valign-wrapper box">
+              <h3 class="valign center-block" id = "c3"> &nbsp </h3>
+            </div>
+          </div>
 
         </div>
       </div>
     </div>
+  </div>
+    <div class="button">
+      <a class="waves-effect waves-light btn indigo darken-2">Reset</a>
+    </div>
+
   </body>
 </html>

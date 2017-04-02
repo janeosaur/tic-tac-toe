@@ -1,3 +1,13 @@
+body {
+  background-color: #6c97d0;
+  color: #FFF;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 7em;
+}
+
 #board {
   margin-top: 10px;
 }
@@ -5,4 +15,29 @@
 .box {
   border: 1px solid black;
   height: 150px;
+}
+
+.row {
+  margin: 0;
+}
+
+.container .row {
+  margin-left: -3em;
+  margin-right: -3em;
+}
+
+.button {
+  text-align: center;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.classX {
+  color: black;
+  text-shadow: 2px 2px 5px blue;
+}
+
+.classO {
+  color: blue;
+  text-shadow: 2px 2px 5px black;
 }
